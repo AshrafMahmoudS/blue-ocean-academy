@@ -12,15 +12,16 @@ Blue Ocean Academy's website redesign aims to deliver a fast, accessible, and vi
 
 ## 🛠️ Tech Stack
 
-> _To be finalized in Sprint 1 — Discovery & Research_
-
 | Layer | Technology |
 |---|---|
-| Framework | TBD |
-| Styling | TBD |
-| CMS | TBD |
-| Hosting | TBD |
-| CI/CD | TBD |
+| Framework | Next.js (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| CMS | Sanity v3 |
+| Hosting | Vercel |
+| CI/CD | GitHub Actions |
+
+> See full decision rationale in [`docs/tech-stack.md`](./docs/tech-stack.md)
 
 ---
 
@@ -36,15 +37,13 @@ Blue Ocean Academy's website redesign aims to deliver a fast, accessible, and vi
 
 ```
 blue-ocean-academy/
-├── public/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── styles/
-│   └── utils/
-├── .gitignore
-├── LICENSE
-└── README.md
+├── app/                    # Next.js App Router pages & layouts
+├── components/             # Shared UI components
+├── sanity/                 # Sanity Studio + schemas
+├── lib/                    # Shared utilities
+├── public/                 # Static assets
+├── docs/                   # Project documentation
+└── .github/workflows/      # GitHub Actions CI/CD pipelines
 ```
 
 ---
@@ -58,7 +57,7 @@ git clone https://github.com/AshrafMahmoudS/blue-ocean-academy.git
 # Navigate into the project
 cd blue-ocean-academy
 
-# Install dependencies (once tech stack is confirmed)
+# Install dependencies
 npm install
 
 # Start dev server
@@ -91,7 +90,7 @@ npm run dev
 
 | Sprint | Update |
 |---|---|
-| Sprint 1 | Repository initialized, branch strategy established |
+| Sprint 1 | Repository initialized, branch strategy established, tech stack finalized |
 
 ---
 
