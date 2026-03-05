@@ -1,2 +1,100 @@
-# blue-ocean-academy
-🌊 Blue Ocean Academy — Modern website redesign built with performance, accessibility, and scalability at its core.
+# 🌊 Blue Ocean Academy
+
+> A modern, redesigned web platform for Blue Ocean Academy — built with performance, accessibility, and scalability at its core.
+
+---
+
+## 🎯 Project Mission
+
+Blue Ocean Academy's website redesign aims to deliver a fast, accessible, and visually compelling digital presence that reflects the institution's values and serves its students, staff, and prospective community members effectively.
+
+---
+
+## 🛠️ Tech Stack
+
+> _To be finalized in Sprint 1 — Discovery & Research_
+
+| Layer | Technology |
+|---|---|
+| Framework | TBD |
+| Styling | TBD |
+| CMS | TBD |
+| Hosting | TBD |
+| CI/CD | TBD |
+
+---
+
+## 👥 Team
+
+| Role | Name |
+|---|---|
+| Lead Engineer | Ashraf M. Saad |
+
+---
+
+## 🗂️ Project Structure
+
+```
+blue-ocean-academy/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
+│   └── utils/
+├── .gitignore
+├── LICENSE
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/AshrafMahmoudS/blue-ocean-academy.git
+
+# Navigate into the project
+cd blue-ocean-academy
+
+# Install dependencies (once tech stack is confirmed)
+npm install
+
+# Start dev server
+npm run dev
+```
+
+---
+
+## 🤝 Contributing
+
+1. Branch off `develop` using the convention `feature/BOA-XXX-short-description`
+2. Commit using clear, descriptive messages referencing the task ID (e.g. `BOA-001: Initial README`)
+3. Open a PR into `develop` — no direct pushes to `main`
+4. PRs require at least one review before merge
+
+### Branch Strategy
+
+| Branch | Purpose |
+|---|---|
+| `main` | Production-ready code only. Protected. |
+| `develop` | Active development branch. All PRs merge here first. |
+| `feature/BOA-XXX-desc` | Feature branches cut from `develop` |
+| `fix/BOA-XXX-desc` | Bug fix branches cut from `develop` |
+
+---
+
+## 📅 Sprint Updates
+
+> This README is a living document updated at the close of each sprint.
+
+| Sprint | Update |
+|---|---|
+| Sprint 1 | Repository initialized, branch strategy established |
+
+---
+
+## 📄 License
+
+MIT © 2026 Blue Ocean Academy
