@@ -12,15 +12,17 @@ Blue Ocean Academy's website redesign aims to deliver a fast, accessible, and vi
 
 ## 🛠️ Tech Stack
 
-> _To be finalized in Sprint 1 — Discovery & Research_
-
 | Layer | Technology |
 |---|---|
-| Framework | TBD |
-| Styling | TBD |
-| CMS | TBD |
-| Hosting | TBD |
-| CI/CD | TBD |
+| Framework | Next.js (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| CMS | Sanity v3 |
+| Hosting | Vercel |
+| CI/CD | GitHub Actions |
+| Package Manager | pnpm |
+
+> Full decision rationale → [`docs/tech-stack.md`](./docs/tech-stack.md)
 
 ---
 
@@ -36,14 +38,26 @@ Blue Ocean Academy's website redesign aims to deliver a fast, accessible, and vi
 
 ```
 blue-ocean-academy/
-├── public/
+├── .github/
+│   └── workflows/          # GitHub Actions CI/CD
+├── docs/
+│   └── tech-stack.md       # Tech stack decisions
+├── public/                 # Static assets
+├── sanity/                 # Sanity Studio (embedded)
+│   ├── schemas/
+│   └── sanity.config.ts
 ├── src/
+│   ├── app/                # Next.js App Router
 │   ├── components/
-│   ├── pages/
-│   ├── styles/
-│   └── utils/
-├── .gitignore
-├── LICENSE
+│   │   ├── ui/
+│   │   └── sections/
+│   ├── lib/
+│   │   └── sanity/
+│   └── types/
+├── next.config.ts
+├── tailwind.config.ts
+├── tsconfig.json
+├── pnpm-lock.yaml
 └── README.md
 ```
 
@@ -58,11 +72,11 @@ git clone https://github.com/AshrafMahmoudS/blue-ocean-academy.git
 # Navigate into the project
 cd blue-ocean-academy
 
-# Install dependencies (once tech stack is confirmed)
-npm install
+# Install dependencies
+pnpm install
 
 # Start dev server
-npm run dev
+pnpm dev
 ```
 
 ---
@@ -91,7 +105,7 @@ npm run dev
 
 | Sprint | Update |
 |---|---|
-| Sprint 1 | Repository initialized, branch strategy established |
+| Sprint 1 | Repository initialized, branch strategy established, tech stack finalized |
 
 ---
 
